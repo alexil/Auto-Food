@@ -1,0 +1,28 @@
+import os
+
+
+class MainTests():
+    def test(self):
+        a = (1, 2, 3, 4, 5, 6)
+        b = [1, 2, 3, 4, 5, 6]
+        a.__sizeof__()
+        b.__sizeof__()
+
+        # print (a)
+        # print (b)
+        # print (a.__sizeof__())
+        # print (b.__sizeof__())
+        # print(a, b)
+
+        i = 0
+
+        for k, v in os.environ.items():
+            i += 1
+
+            print("%.2d::>>%s=:%s" % (i, k, v))
+
+        return
+
+
+m = MainTests().test()
+# m.test()
